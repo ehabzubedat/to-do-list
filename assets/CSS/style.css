@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+body {
+    min-height: 100%;
+    background-color: #eeeee4;
+    font-family: 'Handlee', cursive;
+}
+
+.paper {
+    position: relative;
+    margin: 50px auto !important;
+    width: 90%;
+    max-width: 1080px;
+    min-width: 400px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px solid #D44147;
+    box-sizing: border-box;
+}
+
+.paper-content {
+    position: relative;
+    max-width: 92%;
+    top: 10px;
+    right: 0;
+    bottom: 30px;
+    left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+    background-size: 30px 30px;
+}
+
+.paper-content input {
+    line-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: mediumblue;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+input[type="text"] {
+    min-width: 85%;
+}
+
+#date,
+#time {
+    min-width: 100px;
+    max-width: 150px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+.paper-content label {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+input[type="button"] {
+    font-weight: bold;
+}
+
+#reset_btn {
+    color: red;
+}
+
+#add_btn {
+    color: green;
+}
+
+.title {
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li {
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.datetime {
+    font-weight: bold;
+    cursor: default;
+    float: right;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.task:hover {
+    background-color: #bfbebe;
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.delete {
+    color: #ff4444;
+    display: none;
+    padding: 0 10px;
+}
+
+li:hover .delete {
+    display: inline;
+}
+
+.task>input,
+.task .delete {
+    cursor: pointer;
+}
+
+.task-title {
+    cursor: default;
+    padding-left: 10px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: #fafafa;
+    height: 100px;
+}

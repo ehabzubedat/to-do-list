@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets\CSS\bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.11/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="assets\CSS\jquery-ui.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets\CSS\style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>To Do List Notebook</title>
+</head>
+
+<body>
+    <!-- Notebook -->
+    <div class="paper">
+        <h1>To Do List</h1>
+        <!-- Notebook Content -->
+        <div class="paper-content">
+            <!-- Form -->
+            <form>
+                <div>
+                    <label for="task">Task:</label>
+                    <input type="text" id="task" autocomplete="off" placeholder="Enter Task Title.." autofocus>
+                </div>
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" placeholder="Enter Due Date..">
+                </div>
+                <div>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" placeholder="Enter Due Time..">
+                </div>
+                <div>
+                    <input type="button" value="Reset" id="reset_btn">
+                    <input type="button" value="Add" id="add_btn">
+                </div>
+            </form>
+            <!-- ./Form -->
+            <div class="title">My Tasks</div>
+            <!-- All Task's -->
+            <ul id="tasks"></ul>
+            <!-- ./All Task's -->
+            <!-- Footer -->
+            <div class="footer"></div>
+            <!-- ./Footer -->
+        </div>
+        <!-- ./Notebook Content -->
+    </div>
+    <!-- ./Notebook -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets\JS\jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script type="text/javascript" src="assets\JS\jquery-ui.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="assets\JS\bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets\JS\bootstrap.bundle.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.11/flatpickr.min.js"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="assets\JS\script.js"></script>
+</body>
+
+</html>
